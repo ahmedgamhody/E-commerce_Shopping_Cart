@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart | Registration Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="registration.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="head-con">
+          <a href="index.html" class="brand"> Shopping Cart </a>
+          <nav>
+            <ul>
+              <li><a href="login.html">Sign In</a></li>
+              <li><a href="registration.html">Sign Up</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="s-form">
+      <div class="form">
+        <h3>Welcome</h3>
+        <form action="#" novalidate>
+          <!-- input = in  -->
+          <div class="in">
+            <p>User Name</p>
+            <input type="text" placeholder="User Name" id="username" />
+            <i class="fa-solid fa-user" style="color: #000000"></i>
+          </div>
+          <div class="in">
+            <p>Email</p>
+            <input type="email" placeholder="Email" id="email" />
+            <i class="fa-solid fa-envelope" style="color: #000000"></i>
+          </div>
+          <div class="in">
+            <p>Password</p>
+            <input type="password" placeholder="Password" id="password" />
+            <i class="fa-solid fa-lock" style="color: #000000"></i>
+          </div>
+          <!-- <button type="submit">Login</button> -->
+          <button class="btn-login" value="sign up" id="btn-sign-up">
+            Sign Up
+          </button>
+        </form>
+        I Have Account <a href="login.html">Login</a>
+      </div>
+    </section>
+    <script src="registration.js"></script>
+  </body>
+</html>

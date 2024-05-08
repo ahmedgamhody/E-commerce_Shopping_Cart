@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart | Edit product Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="head-con">
+          <a href="index.html" class="brand"> Shopping Cart </a>
+          <nav>
+            <ul id="links">
+              <li><a href="login.html">Sign In</a></li>
+              <li><a href="registration.html">Sign Up</a></li>
+            </ul>
+            <ul id="user-info">
+              <li><a href="#" id="user"></a></li>
+              <li><a href="myNewProducts.html">My New Products</a></li>
+              <li><a href="fav.html">Favorites</a></li>
+              <li>
+                <i id="card-icon" class="fa-solid fa-cart-shopping"></i>
+                <span id="badge"></span>
+                <div class="prodects-menu">
+                  <div class="prodects-added"></div>
+                  <a href="prodects.html">View All Products</a>
+                </div>
+              </li>
+              <li><a href="registration.html" id="logOut">Log Out</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="create-page">
+      <div class="container">
+        <form id="create-form">
+          <input id="create-image" type="file" />
+          <input id="create-name" type="text" placeholder="Name..." />
+          <input id="create-des" type="text" placeholder="Description..." />
+          <input id="create-price" type="text" placeholder="Price...$" />
+          <select name="" id="size">
+            <option value="" hidden>Select Size</option>
+            <option value="large">Large</option>
+            <option value="medium">Medium</option>
+            <option value="small">Small</option>
+          </select>
+          <input type="submit" value="Update" />
+        </form>
+      </div>
+      <a href="createProduct.html">
+        <i class="fa-solid fa-plus create-product"></i>
+      </a>
+    </section>
+    <script src="editItem.js"></script>
+    <script src="menu.js"></script>
+  </body>
+</html>
